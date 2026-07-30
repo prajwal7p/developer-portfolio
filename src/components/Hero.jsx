@@ -72,7 +72,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="/Prajwal's deployed resume-hackerresume (1).pdf"
+              href="/fully updated mernresume praju-hackerresume.pdf"
               target="_blank"
               className="flex items-center gap-2 border border-white/10 hover:bg-white/10 transition px-7 py-4 rounded-full"
             >
