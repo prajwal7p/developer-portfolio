@@ -5,6 +5,7 @@ import {
   Clapperboard,
   GraduationCap,
   ShoppingBag,
+  WalletCards,
 } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 
@@ -56,6 +57,21 @@ const projects = [
     tech: ["React", "Node.js", "Express", "MongoDB", "Context API"],
     github: "https://github.com/prajwal7p/E-commece-website",
     demo: "https://e-commece-website-emq5.vercel.app/",
+  },
+  {
+    title: "FinTrack AI",
+    label: "AI-powered MERN application",
+    icon: WalletCards,
+    accent: "from-emerald-400 to-teal-500",
+    description:
+      "A full-stack personal finance tracker that helps users securely manage transactions, monitor spending, and gain AI-assisted financial insights.",
+    highlights: [
+      "Secure JWT authentication with protected financial data",
+      "Income and expense tracking with interactive analytics dashboards",
+      "AI-powered insights with exportable CSV and PDF reports",
+    ],
+    tech: ["React", "Node.js", "Express", "MongoDB", "Gemini AI"],
+    github: "https://github.com/prajwal7p/Finance_Tracker",
   },
 ];
 
@@ -128,15 +144,17 @@ export default function Projects() {
                   >
                     <FaGithub size={17} /> Source
                   </a>
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label={`Open ${project.title} live demo`}
-                    className="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-500"
-                  >
-                    Live demo <ArrowUpRight size={17} />
-                  </a>
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={`Open ${project.title} live demo`}
+                      className="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-500"
+                    >
+                      Live demo <ArrowUpRight size={17} />
+                    </a>
+                  )}
                 </div>
               </motion.article>
             );
