@@ -72,6 +72,7 @@ const projects = [
     ],
     tech: ["React", "Node.js", "Express", "MongoDB", "Gemini AI"],
     github: "https://github.com/prajwal7p/Finance_Tracker",
+    demo: "https://finance-tracker-bie8iiiff-prajwal7ps-projects.vercel.app/",
   },
 ];
 
